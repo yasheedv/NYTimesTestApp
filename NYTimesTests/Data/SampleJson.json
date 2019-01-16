@@ -1,0 +1,306 @@
+{
+    "results": [
+        {
+            "url": "https://www.nytimes.com/2019/01/11/us/politics/fbi-trump-russia-inquiry.html",
+            "adx_keywords": "Trump, Donald J;Federal Bureau of Investigation;Comey, James B;Russia;Espionage and Intelligence Services;Russian Interference in 2016 US Elections and Ties to Trump Associates;Presidential Election of 2016;Special Prosecutors (Independent Counsel);Mueller, Robert S III;United States Politics and Government;Classified Information and State Secrets;Justice Department",
+            "column": null,
+            "section": "U.S.",
+            "byline": "By ADAM GOLDMAN, MICHAEL S. SCHMIDT and NICHOLAS FANDOS",
+            "type": "Article",
+            "title": "title 1",
+            "abstract": "The investigation, whose fate is unclear, led counterintelligence investigators to consider an explosive question: whether the president’s actions constituted a possible threat to national security.",
+            "published_date": "date 1",
+            "media": [
+                {
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "Following President Trump&rsquo;s firing of James B. Comey as F.B.I. director, the bureau grew increasingly concerned about whether the president&rsquo;s actions constituted anti-American activity.",
+                    "copyright": "Sarah Silbiger/The New York Times",
+                    "approved_for_syndication": 1,
+                    "media-metadata": [
+                        {
+                            "url": "https://static01.nyt.com/images/2019/01/12/us/politics/12fbi-1-print/12fbi-1-square320.jpg",
+                            "format": "square320",
+                            "height": 320,
+                            "width": 320
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2019/01/12/us/politics/12fbi-1-print/12fbi-1-thumbStandard.jpg",
+                            "format": "Standard Thumbnail",
+                            "height": 75,
+                            "width": 75
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2019/01/12/us/politics/12fbi-1-print/12fbi-1-articleInline.jpg",
+                            "format": "Normal",
+                            "height": 134,
+                            "width": 190
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2019/01/12/us/politics/12fbi-1-print/12fbi-1-sfSpan.jpg",
+                            "format": "Large",
+                            "height": 263,
+                            "width": 395
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2019/01/12/us/politics/12fbi-1-print/12fbi-1-jumbo.jpg",
+                            "format": "Jumbo",
+                            "height": 724,
+                            "width": 1024
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2019/01/12/us/politics/12fbi-1-print/12fbi-1-superJumbo.jpg",
+                            "format": "superJumbo",
+                            "height": 1447,
+                            "width": 2048
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2019/01/12/us/politics/12fbi-1-print/12fbi-1-square640.jpg",
+                            "format": "square640",
+                            "height": 640,
+                            "width": 640
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2019/01/12/us/politics/12fbi-1-print/12fbi-1-thumbLarge.jpg",
+                            "format": "Large Thumbnail",
+                            "height": 150,
+                            "width": 150
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2019/01/12/us/politics/12fbi-1-print/12fbi-1-mediumThreeByTwo210.jpg",
+                            "format": "mediumThreeByTwo210",
+                            "height": 140,
+                            "width": 210
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2019/01/12/us/politics/12fbi-1-print/12fbi-1-mediumThreeByTwo440.jpg",
+                            "format": "mediumThreeByTwo440",
+                            "height": 293,
+                            "width": 440
+                        }
+                    ]
+                }
+            ],
+            "source": "The New York Times",
+            "id": 100000006285101,
+            "asset_id": 100000006285101,
+            "views": 1,
+            "des_facet": [
+                "RUSSIAN INTERFERENCE IN 2016 US ELECTIONS AND TIES TO TRUMP ASSOCIATES",
+                "PRESIDENTIAL ELECTION OF 2016"
+            ],
+            "org_facet": [
+                "FEDERAL BUREAU OF INVESTIGATION",
+                "ESPIONAGE AND INTELLIGENCE SERVICES",
+                "SPECIAL PROSECUTORS (INDEPENDENT COUNSEL)",
+                "UNITED STATES POLITICS AND GOVERNMENT",
+                "CLASSIFIED INFORMATION AND STATE SECRETS",
+                "JUSTICE DEPARTMENT"
+            ],
+            "per_facet": [
+                "TRUMP, DONALD J",
+                "COMEY, JAMES B",
+                "MUELLER, ROBERT S III"
+            ],
+            "geo_facet": [
+                "RUSSIA"
+            ]
+        },
+        {
+            "url": "https://www.nytimes.com/interactive/2019/travel/places-to-visit.html",
+            "adx_keywords": "Travel and Vacations;52 Places 2019",
+            "column": "",
+            "section": "Travel",
+            "byline": "",
+            "type": "title 2",
+            "title": "52 Places to Go in 2019",
+            "abstract": "A starter kit for escaping into the world.",
+            "published_date": "date 2",
+            "source": "The New York Times",
+            "id": 100000006294609,
+            "asset_id": 100000006294609,
+            "views": 2,
+            "des_facet": [
+                "TRAVEL AND VACATIONS"
+            ],
+            "org_facet": "",
+            "per_facet": "",
+            "geo_facet": "",
+            "media": [
+                {
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "",
+                    "copyright": "From left: Beth Coller; Andreas Meichsner for NYT; Andy Haslam for NYT; Tzachi Ostrovsky for NYT",
+                    "approved_for_syndication": 0,
+                    "media-metadata": [
+                        {
+                            "url": "https://static01.nyt.com/images/2019/01/07/travel/52-PROMO/52-PROMO-square320.jpg",
+                            "format": "square320",
+                            "height": 320,
+                            "width": 320
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2019/01/07/travel/52-PROMO/52-PROMO-thumbStandard-v2.jpg",
+                            "format": "Standard Thumbnail",
+                            "height": 75,
+                            "width": 75
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2019/01/07/travel/52-PROMO/52-PROMO-articleInline.jpg",
+                            "format": "Normal",
+                            "height": 127,
+                            "width": 190
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2019/01/07/travel/52-PROMO/52-PROMO-sfSpan.jpg",
+                            "format": "Large",
+                            "height": 263,
+                            "width": 395
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2019/01/07/travel/52-PROMO/52-PROMO-jumbo.jpg",
+                            "format": "Jumbo",
+                            "height": 683,
+                            "width": 1024
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2019/01/07/travel/52-PROMO/52-PROMO-superJumbo.jpg",
+                            "format": "superJumbo",
+                            "height": 1365,
+                            "width": 2048
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2019/01/07/travel/52-PROMO/52-PROMO-square640.jpg",
+                            "format": "square640",
+                            "height": 640,
+                            "width": 640
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2019/01/07/travel/52-PROMO/52-PROMO-thumbLarge-v2.jpg",
+                            "format": "Large Thumbnail",
+                            "height": 150,
+                            "width": 150
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2019/01/07/travel/52-PROMO/52-PROMO-mediumThreeByTwo210.jpg",
+                            "format": "mediumThreeByTwo210",
+                            "height": 140,
+                            "width": 210
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2019/01/07/travel/52-PROMO/52-PROMO-mediumThreeByTwo440.jpg",
+                            "format": "mediumThreeByTwo440",
+                            "height": 293,
+                            "width": 440
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "url": "https://www.nytimes.com/2019/01/09/us/politics/government-shutdown-trump-senate.html",
+            "adx_keywords": "Trump, Donald J;Shutdowns (Institutional);United States Politics and Government;Border Barriers;Democratic Party;House of Representatives;Republican Party;Senate",
+            "column": null,
+            "section": "U.S.",
+            "byline": "By NICHOLAS FANDOS, MICHAEL TACKETT and JULIE HIRSCHFELD DAVIS",
+            "type": "Article",
+            "title": "title 3",
+            "abstract": "President Trump slammed a table, then stormed out of a negotiating session with Democrats, declaring it “a total waste of time” as the shutdown stretches on.",
+            "published_date": "date 3",
+            "source": "The New York Times",
+            "id": 100000006297677,
+            "asset_id": 100000006297677,
+            "views": 3,
+            "des_facet": [
+                "SHUTDOWNS (INSTITUTIONAL)",
+                "UNITED STATES POLITICS AND GOVERNMENT"
+            ],
+            "org_facet": [
+                "BORDER BARRIERS",
+                "DEMOCRATIC PARTY",
+                "HOUSE OF REPRESENTATIVES",
+                "REPUBLICAN PARTY",
+                "SENATE"
+            ],
+            "per_facet": [
+                "TRUMP, DONALD J"
+            ],
+            "geo_facet": "",
+            "media": [
+                {
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "President Trump and Vice President Mike Pence arriving on Capitol Hill on Wednesday for a meeting with Republican leadership.",
+                    "copyright": "Doug Mills/The New York Times",
+                    "approved_for_syndication": 1,
+                    "media-metadata": [
+                        {
+                            "url": "https://static01.nyt.com/images/2019/01/10/us/politics/10dc-shutdown-print/10dc-trump-square320.jpg",
+                            "format": "square320",
+                            "height": 320,
+                            "width": 320
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2019/01/10/us/politics/10dc-shutdown-print/10dc-trump-thumbStandard.jpg",
+                            "format": "Standard Thumbnail",
+                            "height": 75,
+                            "width": 75
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2019/01/10/us/politics/10dc-shutdown-print/merlin_148947645_0535b456-d0db-4099-837b-5099bb0d21db-articleInline.jpg",
+                            "format": "Normal",
+                            "height": 127,
+                            "width": 190
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2019/01/10/us/politics/10dc-shutdown-print/merlin_148947645_0535b456-d0db-4099-837b-5099bb0d21db-sfSpan.jpg",
+                            "format": "Large",
+                            "height": 263,
+                            "width": 395
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2019/01/10/us/politics/10dc-shutdown-print/merlin_148947645_0535b456-d0db-4099-837b-5099bb0d21db-jumbo.jpg",
+                            "format": "Jumbo",
+                            "height": 683,
+                            "width": 1024
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2019/01/10/us/politics/10dc-shutdown-print/merlin_148947645_0535b456-d0db-4099-837b-5099bb0d21db-superJumbo.jpg",
+                            "format": "superJumbo",
+                            "height": 1365,
+                            "width": 2048
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2019/01/10/us/politics/10dc-shutdown-print/10dc-trump-square640.jpg",
+                            "format": "square640",
+                            "height": 640,
+                            "width": 640
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2019/01/10/us/politics/10dc-shutdown-print/10dc-trump-thumbLarge.jpg",
+                            "format": "Large Thumbnail",
+                            "height": 150,
+                            "width": 150
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2019/01/10/us/politics/10dc-shutdown-print/10dc-trump-mediumThreeByTwo210-v3.jpg",
+                            "format": "mediumThreeByTwo210",
+                            "height": 140,
+                            "width": 210
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2019/01/10/us/politics/10dc-shutdown-print/10dc-trump-mediumThreeByTwo440-v3.jpg",
+                            "format": "mediumThreeByTwo440",
+                            "height": 293,
+                            "width": 440
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "status": "OK",
+    "copyright": "Copyright (c) 2019 The New York Times Company.  All Rights Reserved.",
+    "num_results": 1688
+}

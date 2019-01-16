@@ -1,0 +1,11 @@
+[
+  {
+    "character" : 76,
+    "file" : "\/Users\/yasheedmuhammed\/Desktop\/Xcode Projects\/NYTimes\/NYTimes\/ViewControllers\/News Home\/NewsViewController.swift",
+    "line" : 113,
+    "reason" : "Force casts should be avoided.",
+    "rule_id" : "force_cast",
+    "severity" : "Error",
+    "type" : "Force Cast"
+  }
+]
