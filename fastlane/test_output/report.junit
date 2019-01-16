@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites name='NYTimesUITests.xctest' tests='5' failures='0'>
+  <testsuite name='NYTimesTests.NewsDataParserTests' tests='3' failures='0'>
+    <testcase classname='NYTimesTests.NewsDataParserTests' name='testNewsDataHasExpectedValues' time='0.007'/>
+    <testcase classname='NYTimesTests.NewsDataParserTests' name='testParserEmptyValue' time='0.004'/>
+    <testcase classname='NYTimesTests.NewsDataParserTests' name='testParserWithDummyData' time='0.003'/>
+  </testsuite>
+  <testsuite name='NYTimesTests.WebServiceCallTests' tests='1' failures='0'>
+    <testcase classname='NYTimesTests.WebServiceCallTests' name='testNyTimesArticleApicall' time='2.975'/>
+  </testsuite>
+  <testsuite name='NYTimesUITests.NYTimesUITests' tests='1' failures='0'>
+    <testcase classname='NYTimesUITests.NYTimesUITests' name='testTableLoading' time='15.746'/>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,110 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:ios)
+
+platform :ios do
+  desc "Description of what the lane does"
+  end
+
+USER_NAME = "Your apple developer account username" # Example "abc@company.com"
+CODE_SIGNING_AUTHORITY = "iPhone Distribution: TeamName (Team Id)" # Example "iPhone Distribution: Apple developer LLC (URJ******)"
+BUNDLE_ID = "com.my.NYTimes"
+APP_NAME = "NYTimesTest"
+
+
+#------------------------------------------------------------------------AD-HOC LANE--------------------------------------------------------------------------
+
+
+
+xcargs = [
+           '-allowProvisioningUpdates'
+    ]
+
+
+desc "Archives development Build"
+  lane :development do
+
+clear_derived_data
+produce(
+    skip_itc: true,
+    username: USER_NAME,
+    app_identifier: BUNDLE_ID,
+    app_name: APP_NAME,
+    language: 'English'
+    )
+get_provisioning_profile(
+  adhoc: true,
+  force: true,
+  filename: "NYTimesAdHocProv.mobileprovision",
+  app_identifier: BUNDLE_ID,
+  username: USER_NAME
+
+)
+automatic_code_signing(
+path: "./NYTimes.xcodeproj",
+use_automatic_signing: false
+)
+
+update_project_provisioning(
+  xcodeproj: "./NYTimes.xcodeproj",
+  profile: "./NYTimesAdHocProv.mobileprovision", # optional if you use sigh
+  target_filter: "NYTimes",
+  build_configuration: "Debug",
+  code_signing_identity: CODE_SIGNING_AUTHORITY
+)
+
+   
+gym(export_options: {
+provisioningProfiles: {
+        BUNDLE_ID: "NYTimesAdHocProv"
+      },
+
+      method: "ad-hoc",
+      signingStyle: "manual",
+      export_team_id: "URJ2JNKM9M"
+
+    },
+    xcargs: xcargs.join(' '),
+    output_directory: "./BUILD",
+    scheme: "development",
+    configuration: "Debug",
+    clean: true)
+    
+  end
+
+#------------------------------------------------------------------------Linting LANE--------------------------------------------------------------------------
+desc "Create swiftLint"
+  lane :lint do
+swiftlint(
+    mode: :lint,                            # SwiftLint mode: :lint (default) or :autocorrect
+    executable: "Pods/SwiftLint/swiftlint", # The SwiftLint binary path (optional). Important if you've installed it via CocoaPods
+    output_file: "swiftlint.result.json",   # The path of the output file (optional)
+    reporter: "json",                       # The custom reporter to use (optional)
+    ignore_exit_status: true,               # Allow fastlane to continue even if SwiftLint returns a non-zero exit status (Default: false)
+    quiet: true,                            # Don't print status logs like 'Linting ' & 'Done linting' (Default: false)
+    strict: true                            # Fail on warnings? (Default: false)
+)
+
+end
+
+#------------------------------------------------------------------------Tests LANE--------------------------------------------------------------------------
+
+lane :tests do
+  run_tests(workspace: "NYTimes.xcworkspace",
+            devices: ["iPhone 7 Plus"],
+            scheme: "NYTimes")
+
+end
