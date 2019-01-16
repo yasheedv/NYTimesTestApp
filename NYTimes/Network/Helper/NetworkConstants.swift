@@ -24,7 +24,7 @@ enum ContentType: String {
     case textJavascript = "text/javascript"
 }
 
-public enum CompletionState {
+enum CompletionState {
     case succes(response: Any)
     case failure(error: String)
 }

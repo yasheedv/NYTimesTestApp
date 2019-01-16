@@ -13,6 +13,6 @@ import Alamofire
  protocol Parser is used to send the json value to the Classes for parsing the json
  */
 
-public protocol Parser {
+protocol Parser {
     static func parse(_ json: Parameters) -> CompletionState
 }
