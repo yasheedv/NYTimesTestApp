@@ -41,6 +41,7 @@
 		C170D09E21EE6A70000231AA /* NewsDataParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C170D09D21EE6A70000231AA /* NewsDataParserTests.swift */; };
 		C170D0A021EE6AF7000231AA /* SampleJson.json in Resources */ = {isa = PBXBuildFile; fileRef = C170D09F21EE6AF7000231AA /* SampleJson.json */; };
 		C170D0A221EF0773000231AA /* WebServiceCallTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C170D0A121EF0773000231AA /* WebServiceCallTests.swift */; };
+		C173150221F092B500EDFB33 /* CommonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C173150121F092B500EDFB33 /* CommonTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +105,7 @@
 		C170D09D21EE6A70000231AA /* NewsDataParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDataParserTests.swift; sourceTree = "<group>"; };
 		C170D09F21EE6AF7000231AA /* SampleJson.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SampleJson.json; sourceTree = "<group>"; };
 		C170D0A121EF0773000231AA /* WebServiceCallTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceCallTests.swift; sourceTree = "<group>"; };
+		C173150121F092B500EDFB33 /* CommonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonTests.swift; sourceTree = "<group>"; };
 		F3BD5613C9F08A1CCAA9D82D /* Pods-NYTimesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NYTimesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NYTimesTests/Pods-NYTimesTests.release.xcconfig"; sourceTree = "<group>"; };
 		F4188B6DA675FF283AE9558E /* Pods-NYTimesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NYTimesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NYTimesTests/Pods-NYTimesTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F918D76B094BC05436AFB442 /* Pods_NYTimesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NYTimesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -356,6 +358,7 @@
 			children = (
 				C170D09D21EE6A70000231AA /* NewsDataParserTests.swift */,
 				C170D0A121EF0773000231AA /* WebServiceCallTests.swift */,
+				C173150121F092B500EDFB33 /* CommonTests.swift */,
 			);
 			path = Cases;
 			sourceTree = "<group>";
@@ -663,6 +666,7 @@
 			files = (
 				C170D0A221EF0773000231AA /* WebServiceCallTests.swift in Sources */,
 				C170D09E21EE6A70000231AA /* NewsDataParserTests.swift in Sources */,
+				C173150221F092B500EDFB33 /* CommonTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -709,6 +713,7 @@
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_CODE_COVERAGE = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -770,6 +775,7 @@
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_CODE_COVERAGE = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;

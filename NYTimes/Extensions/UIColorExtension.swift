@@ -9,17 +9,13 @@
 import Foundation
 import UIKit
 extension UIColor {
-    convenience init(colorCode: String) {
-        self.init(hex: colorCode)
-    }
     convenience init(hex: String) {
         var string = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
         if string.hasPrefix("#") {
             string.remove(at: string.startIndex)
         }
         guard string.count == 6 else {
-            assertionFailure("Hex string should have 6 characters (besides the #)")
-            self.init(colorCode: "#FFFFFF")
+            self.init(hex: "#FFFFFF")
             return
         }
         var rgbValue: UInt32 = 0
@@ -34,9 +30,6 @@ extension UIColor {
         assert(green >= 0 && green <= 255, "Invalid green")
         assert(blue >= 0 && blue <= 255, "Invalid blue")
         self.init(red: red/255, green: green/255, blue: blue/255, alpha: 1)
-    }
-    convenience init(oneCode: CGFloat) {
-        self.init(red: oneCode, green: oneCode, blue: oneCode)
     }
     convenience init(themeColor: ThemeColor) {
         self.init(hex: themeColor.rawValue)

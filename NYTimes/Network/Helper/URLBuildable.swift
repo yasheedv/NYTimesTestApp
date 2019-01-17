@@ -21,18 +21,11 @@ protocol URLBuildable: URLRequestConvertible {
 }
 
 extension URLBuildable {
-    var httpMethod: HTTPMethod {
-        return .post
-    }
-    var acceptType: ContentType {
-        return .json
-    }
     // MARK: - URLRequestConvertible
     func asURLRequest() throws -> URLRequest {
         var urlCopy = buildEnvironment.baseUrl
         if let pathCopy = path {
-            let removeWhiteSpace = pathCopy.components(separatedBy: .whitespaces).joined()
-            urlCopy += removeWhiteSpace
+            urlCopy += pathCopy
         }
         let url = try urlCopy.asURL()
         var urlRequest = URLRequest(url: url)
@@ -42,11 +35,7 @@ extension URLBuildable {
         urlRequest.addValue(acceptType.rawValue, forHTTPHeaderField: HTTPHeaderField.acceptType.rawValue)
         urlRequest.addValue(ContentType.json.rawValue, forHTTPHeaderField: HTTPHeaderField.contentType.rawValue)
         if let params = parameters {
-            do {
-                urlRequest.httpBody = try JSONSerialization.data(withJSONObject: params, options: [])
-            } catch {
-                throw AFError.parameterEncodingFailed(reason: .jsonEncodingFailed(error: error))
-            }
+            urlRequest.httpBody = try? JSONSerialization.data(withJSONObject: params, options: [])
         }
         return urlRequest
     }

@@ -20,11 +20,7 @@ extension UIImageView {
         }
         if let url = URL(string: urlString) {
             let session = URLSession.shared
-            let dataTask = session.dataTask(with: url) { (data, _, error) in
-                if let unwrappedError = error {
-                    print(unwrappedError)
-                    return
-                }
+            let dataTask = session.dataTask(with: url) { (data, _, _) in
                 if let unwrappedData = data, let downloadedImage = UIImage(data: unwrappedData) {
                     DispatchQueue.main.async(execute: {
                         imageCache.setObject(downloadedImage, forKey: urlString as NSString)

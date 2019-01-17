@@ -8,7 +8,7 @@
 
 import Foundation
 import Alamofire
-class NetworkEngine {
+final class NetworkEngine {
     /*
      Parameters
      T :- generic type

@@ -5,12 +5,17 @@
     
     
       
-      <testcase classname="fastlane.lanes" name="0: default_platform" time="0.006604">
+      <testcase classname="fastlane.lanes" name="0: default_platform" time="0.008614">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="1: run_tests" time="50.525334">
+      <testcase classname="fastlane.lanes" name="1: scan" time="54.811222">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="2: slather coverage --ignore '../../*'   --html   --scheme NYTimes   --workspace ../NYTimes.xcworkspace   --output-directory test_output/code_coverage/   ../NYTimes.xcodeproj" time="3.374119">
         
       </testcase>
     

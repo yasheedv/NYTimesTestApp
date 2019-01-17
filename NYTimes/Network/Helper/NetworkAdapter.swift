@@ -23,9 +23,9 @@ class NetworkAdapter {
      completion : - Call back with success or failure cases
      
      */
-    func fetch<T: URLBuildable, U: Parser > (_ buildable: T,
-                                             _ parser: U.Type,
-                                             _ completion: @escaping CompletionWithSuccessOrFailure) {
+    final func fetch<T: URLBuildable, U: Parser > (_ buildable: T,
+                                                   _ parser: U.Type,
+                                                   _ completion: @escaping CompletionWithSuccessOrFailure) {
         Alamofire.request(buildable)
             .validate()
             .responseJSON { (response) in

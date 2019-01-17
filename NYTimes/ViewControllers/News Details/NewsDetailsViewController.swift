@@ -33,7 +33,6 @@ extension NewsDetailsViewController: UITableViewDataSource {
         guard let imageCell = tableView.dequeueReusableCell(withIdentifier: "NewsDetails",
                                                             for: indexPath) as? NewsDetails
         else {
-            assertionFailure("DequeueReusableCell failed while casting in NewsDetailsViewController")
             return UITableViewCell()
         }
         imageCell.updateUI(news)

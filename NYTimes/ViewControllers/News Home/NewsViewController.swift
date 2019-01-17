@@ -27,21 +27,17 @@ class NewsViewController: UIViewController {
         self.title = "NY Times Most Popular"
         // Do any additional setup after loading the view, typically from a nib.
     }
-    //Refresh control target
-    @objc func refreshControlAction(_ refreshControl: UIRefreshControl) {
-        getNews()
-    }
     // TableView intitialization
     func setupTableView() {
         tableView.register(cellType: NewsTableViewCell.self)
         tableView.estimatedRowHeight = TableCellHeight.newsCell.rawValue
         tableView.rowHeight = UITableView.automaticDimension
-        refreshController.addTarget(self, action: #selector(refreshControlAction(_:)), for: .valueChanged)
+        refreshController.addTarget(self, action: #selector(getNews), for: .valueChanged)
         tableView.refreshControl = refreshController
         tableView.accessibilityIdentifier = "newsTableView"
     }
     // MARK: - Service call
-    func getNews() {
+    @objc func getNews() {
         showActivityIndicator()
         let networkCall = NetworkServiceCalls()
         networkCall.getNews { [unowned self] (state) in
@@ -49,11 +45,15 @@ class NewsViewController: UIViewController {
             switch state {
             case .succes(let response as NewsResultParser):
                 self.news = response.result
-                if self.refreshController.isRefreshing {
-                    self.tableView.reloadData()
-                    self.refreshController.endRefreshing()
+                if self.news.count == 0 {
+                    self.showAlert("No news available")
                 } else {
-                    self.tableView.horizontalAnimation()
+                    if self.refreshController.isRefreshing {
+                        self.tableView.reloadData()
+                        self.refreshController.endRefreshing()
+                    } else {
+                        self.tableView.horizontalAnimation()
+                    }
                 }
             case .failure(let error):
                 self.showAlert(error.description)
@@ -105,7 +105,6 @@ extension NewsViewController: UITableViewDataSource {
         guard let newsCell = tableView.dequeueReusableCell(withIdentifier: "NewsTableViewCell",
                                                            for: indexPath) as? NewsTableViewCell
         else {
-            assertionFailure("DequeueReusableCell failed while casting in NewsViewController")
             return UITableViewCell()
         }
         newsCell.accessibilityIdentifier = "newsCell\(indexPath.row)"

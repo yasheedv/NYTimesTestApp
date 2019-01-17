@@ -10,15 +10,8 @@ import Foundation
 
 let buildEnvironment: BuildEnvironment = .prod
 enum BuildEnvironment {
-    case sit, uat, prod
+    case  prod
     var baseUrl: String {
-        switch self {
-        case .sit:
-            return newsApiUrl
-        case .uat:
-            return newsApiUrl
-        case .prod:
-            return newsApiUrl
-        }
+        return newsApiUrl
     }
 }
